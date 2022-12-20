@@ -1,0 +1,53 @@
+<template>
+  <div>
+    <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
+    <p v-else>Estou em busca de novas oportunidades!</p>
+    <p>Utilizo as seguintes tecnologias:</p>
+    <ul>
+      <li>JavaScript</li>
+      <li>PHP</li>
+      <li>Python</li>
+    </ul>
+    <div>
+      <button @click="showEmail">{{ textoBotao }}</button>
+    </div>
+    <p v-show="mostrar_email">Mande uma mensagem para: douglasgc13@gmail.com</p>
+    <p class="teste">Para acessar meu portifólio <a v-bind:href="meu_link" target="_black">Basta clicar aqui</a></p>
+    <Picture />
+  </div>
+</template>
+<script>
+import Picture from "./Picture.vue"
+
+export default {
+  name: 'Info',
+  components: {
+    Picture
+  },
+  data() {
+    return { 
+      esta_trabalhando: false,
+      mostrar_email: false,
+      meu_link: "https://www.google.com", // v-bind -> marcar um texto com o link.
+      // target="_black" -> faz abrir uma nova pagina quanto é clicado no link.
+      textoBotao: 'Mostrar Gmail'
+    }
+  },
+  methods: { // Methods serve para da funcionamento.
+    showEmail() {
+      this.mostrar_email = !this.mostrar_email
+      if(!this.mostrar_email) { // Quando for clicado no bottão tambem vai alterar o texto.
+        this.textoBotao = 'Mostra Gmail'
+      } else {
+        this.textoBotao = 'Esconder Gmail'
+      }
+    }
+  }
+}
+</script>
+
+<style>
+  .paragrafo-pai {
+    color: red;
+  }
+</style>

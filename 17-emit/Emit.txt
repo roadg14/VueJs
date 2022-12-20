@@ -1,0 +1,12 @@
+Ouvindo eventos com $emit
+
+* Utilizando o $emit é possível ouvir em evento de um componete,
+filho em um componete pai.
+
+* Com isso, podemos ativar comportamentos (como métodos) no
+componete pai.
+
+* O evento deve ser registrado no componente.
+
+* E é preciso definir o que será feito com a ativação do evento na
+chamada do componente.

@@ -1,0 +1,9 @@
+Renderização de Listas
+
+* As listas (Arrays) serão rederizadas por diretivas.
+
+* Utilizaremos v-for para isso.
+
+* O dado pode vir de data, como uma array.
+
+* E cada item pode ser impresso junto do HTML.

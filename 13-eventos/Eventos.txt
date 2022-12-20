@@ -1,0 +1,10 @@
+Eventos
+
+* Os eventos são utilizados para complementar ações dos usuários
+ativações de métodos.
+
+* Temos diversos tipos de eventos em Vue, como o click: @click.
+
+* Que podem ser adicionados diretamente a elementos do html.
+
+* O evento recebe um "parâmetro" que é o método que será executado.

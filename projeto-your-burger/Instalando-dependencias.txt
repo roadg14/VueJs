@@ -1,0 +1,5 @@
+Instalando o -> npm install json-server.
+
+Após instalar colocar no package.json -> "backend": "json-server --watch db/db.json"
+
+https://www.youtube.com/watch?v=bleEztMsSDk&list=PLnDvRpP8BnezDglaAvtWgQXzsOmXUuRHL&index=20

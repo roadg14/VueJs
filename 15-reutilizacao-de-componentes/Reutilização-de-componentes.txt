@@ -1,0 +1,11 @@
+Reutilização de componentes
+
+* No Vue é comum a reutilização de componenetes.
+
+* Casa componente será completamente independente.
+
+* Podendo ativar seus metodos e mudar seus dados, assim
+que necessário.
+
+* Para utilizar o recursom basta invocar novamente o componente
+após a importação dos mesmo.
