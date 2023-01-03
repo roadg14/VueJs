@@ -9,9 +9,11 @@
     "backend": "json-server --watch db/db.json"
   },
   "dependencies": {
+    "@vue/cli-plugin-router": "^5.0.8",
     "core-js": "^3.8.3",
     "json-server": "^0.17.1",
-    "vue": "^3.2.13"
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -34,7 +36,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": "off"
+    }
   },
   "browserslist": [
     "> 1%",
